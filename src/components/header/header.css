@@ -1,0 +1,155 @@
+header {
+  background-image: linear-gradient(
+      to bottom,
+      black,
+      var(--color-bg),
+      transparent
+    ),
+    url("../../assets/bg-texture.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 80vh;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+
+.wrapper2 {
+  height: 3vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+.typing-demo {
+  width: 26ch;
+  animation: typing 6s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 1.5em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+/* CTA */
+.cta {
+  margin: 2.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Social */
+
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+}
+
+.header__socials::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
+}
+
+/* Image */
+.clock {
+  background: transparent;
+  width: 40rem;
+  height: 16rem;
+  position: absolute;
+  left: calc(50% - 20rem);
+  margin-top: 4rem;
+  border-radius: 5rem 5rem 5rem 5rem;
+  padding: 5rem 1.5rem 1.5rem 1.5rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.clock h1 {
+  text-align: center;
+  border-radius: 15px;
+  border-color: aliceblue;
+  text-decoration: double;
+  font-weight: 600;
+}
+
+.h1 {
+  font-family: "Courier New", Courier, monospace;
+  color: antiquewhite;
+}
+
+/* Scroll Down */
+.scroll__down {
+  position: absolute;
+  right: -5rem;
+  bottom: 11rem;
+  transform: rotate(270deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 68vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+
+  .me {
+    width: 24rem;
+    height: 28rem;
+    position: absolute;
+    left: calc(50% - 12rem);
+    margin-top: 1rem;
+    border-radius: 5rem 5rem 1rem 1rem;
+    overflow: hidden;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  .header__socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+    left: 31%;
+    position: relative;
+    bottom: 0rem;
+  }
+
+  .scroll__down {
+    display: none;
+  }
+
+  .header__socials::after {
+    display: none;
+  }
+}
