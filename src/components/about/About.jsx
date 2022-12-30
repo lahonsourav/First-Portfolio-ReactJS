@@ -51,7 +51,7 @@ const About = () => {
             </article>
           </div>
 
-          <p>
+          <p className="para">
             I am a Computer Science and Engineering student of National
             Institute of Technology (NIT) Silchar;
             <br />

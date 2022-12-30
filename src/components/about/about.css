@@ -75,7 +75,7 @@
   color: var(--color-light);
 }
 
-.about__content {
+.para {
   backdrop-filter: blur(15px);
 }
 
