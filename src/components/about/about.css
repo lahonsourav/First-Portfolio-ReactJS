@@ -75,6 +75,10 @@
   color: var(--color-light);
 }
 
+.about__content {
+  backdrop-filter: blur(15px);
+}
+
 .about__content p {
   margin: 2rem 0 2.6rem;
   color: var(--color-light);
