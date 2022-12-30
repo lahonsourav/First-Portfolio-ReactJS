@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
-import "./portfolio.css";
+import "./Portfolio.css";
+import { Link } from "react-router-dom";
+
 import IMG1 from "../../images/adhorua.jpg";
 import IMG2 from "../../images/boijaa.jpg";
 import IMG3 from "../../images/prapti.jpg";
@@ -9,9 +11,9 @@ import IMG6 from "../../images/maa.jpg";
 
 import PRO1 from "../../images/clock.webp";
 import PRO2 from "../../images/book.png";
-import PRO3 from "../../assets/portfolio2.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { SlBasket } from "react-icons/sl";
 
 const Portfolio = () => {
   useEffect(() => {
@@ -211,7 +213,7 @@ const Portfolio = () => {
         </article>
         <article data-aos="zoom-in-up" className="portfolio__items">
           <div className="portfolio__item-image">
-            <img src={PRO3} alt="" />
+            <img src={PRO2} alt="" />
           </div>
           <h3>Another Portfolio</h3>
           <div className="portfolio__item-cta">

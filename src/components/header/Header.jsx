@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./header.css";
 import CTA from "./CTA";
 import HeaderSocials from "./HeaderSocials";
-import ME from "../../assets/me.png";
 import Fade from "react-reveal/Fade";
 import Typewriter from "typewriter-effect/dist/core";
 
