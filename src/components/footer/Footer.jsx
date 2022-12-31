@@ -51,7 +51,7 @@ const Footer = () => {
         </small>
         <div className="footer__copyright__youtube">
           <small>
-            &nbsp;
+            I used &nbsp;
             <a
               href="https://www.youtube.com/watch?v=G-Cr00UYokU&t=9010s&ab_channel=EGATOR"
               target="_blank"
