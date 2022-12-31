@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "./Portfolio.css";
-import { Link } from "react-router-dom";
 
 import IMG1 from "../../images/adhorua.jpg";
 import IMG2 from "../../images/boijaa.jpg";
@@ -10,7 +9,8 @@ import IMG5 from "../../images/paap.jpg";
 import IMG6 from "../../images/maa.jpg";
 
 import PRO1 from "../../images/clock.webp";
-import PRO2 from "../../images/book.png";
+import PRO2 from "../../images/logojpg.png";
+import PRO3 from "../../images/logolahon.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { SlBasket } from "react-icons/sl";
@@ -188,7 +188,7 @@ const Portfolio = () => {
           <h3>25 Hour Clock using Python</h3>
           <div className="portfolio__item-cta">
             <a
-              href="https://github.com/lahonsourav"
+              href="https://github.com/lahonsourav/25-hours-in-a-day"
               className="btn btn-primary"
               target="_blank"
             >
@@ -200,10 +200,10 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
             <img src={PRO2} alt="" />
           </div>
-          <h3>BooksMafia, Sell and Buy Books</h3>
+          <h3>Mujhe Books Do, Sell and Buy Books (ongoing)</h3>
           <div className="portfolio__item-cta">
             <a
-              href="https://github.com/lahonsourav"
+              href="https://github.com/lahonsourav/Mujhe-Books-Do"
               className="btn btn-primary"
               target="_blank"
             >
@@ -213,9 +213,9 @@ const Portfolio = () => {
         </article>
         <article data-aos="zoom-in-up" className="portfolio__items">
           <div className="portfolio__item-image">
-            <img src={PRO2} alt="" />
+            <img src={PRO3} alt="" />
           </div>
-          <h3>Another Portfolio</h3>
+          <h3>More Projects soon...</h3>
           <div className="portfolio__item-cta">
             <a
               href="https://github.com/lahonsourav"

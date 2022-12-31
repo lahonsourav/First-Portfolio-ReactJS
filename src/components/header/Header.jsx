@@ -14,6 +14,10 @@ const Header = () => {
     setCurrentTime(time);
   };
 
+  // const happen = () => {
+  //   alert("This is working");
+  // };
+
   setInterval(updateTime, 1000);
   return (
     <header>
@@ -25,6 +29,8 @@ const Header = () => {
           <div class="wrapper2">
             <div class="typing-demo">an engineer who loves rap</div>
           </div>
+
+          {/* <button onClick={happen}>Click me</button> */}
 
           {/* <h5 className="text-light">An Engineer who loves Rap</h5> */}
           <CTA />
